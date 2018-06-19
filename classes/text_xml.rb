@@ -59,7 +59,7 @@ class TextXML
 
   end
 
-  # Outputs character split between me and all people I message
+  # Outputs character split between me and all people I message in table
   def total_char_split
     messageData = @data
     output = []
@@ -84,9 +84,30 @@ class TextXML
 
   end
 
+  # Outputs character split between me and all people I message in sum
+  def total_char_split_sum
+    messageData = @data
+
+    char_me = 0
+    char_them = 0
+
+    messageData.each do |name, messages|
+
+      messages.each do |message|
+        if message[2].to_i == 2
+          char_me = char_me + message[1].size
+        else
+          char_them = char_them + message[1].size
+        end
+      end
+    end
+    puts "My char count: #{char_me} | Their char count: #{char_them}"
+
+  end
+
 
 end
 
 a = TextXML.new()
 a.import
-puts a.total_char_split
+puts a.total_char_split_sum
