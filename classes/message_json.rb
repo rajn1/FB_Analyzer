@@ -3,8 +3,9 @@ class MessageJSON
   require "rubygems"
   require "json"
 
-  def initialize(name)
-    @name = name
+  def initialize(filename, myname)
+    @filename = filename
+    @myname = myname
     @title = ""
     @count = 0
     @percentMe = 0
@@ -12,7 +13,7 @@ class MessageJSON
   end
 
   def import
-    messages_file = File.open("C:/Users/RajNa/Documents/Facebook_JSON/messages/" << @name.to_s << "/message.json")
+    messages_file = File.open("C:/Users/RajNa/Documents/Facebook_JSON/messages/" << @filename.to_s << "/message.json")
     messages = File.read(messages_file)
     @data = JSON.parse(messages)
     @title = @data['title']
@@ -26,7 +27,7 @@ class MessageJSON
     data = @data["messages"]
 
     result = data.select do |hash|
-      hash["sender_name"] =~ /raj/i
+      hash["sender_name"] =~ /#{@myname}/i
     end
 
     return result
@@ -39,7 +40,7 @@ class MessageJSON
     other_char = 0
     messages.each do |m|
       begin
-        if m["sender_name"] =~ /raj/i
+        if m["sender_name"] =~ /#{@myname}/i
           my_char = my_char + m["content"].size
         else
           other_char = other_char + m["content"].size
@@ -57,7 +58,7 @@ end
 
 
 
-me = MessageJSON.new("ChiSigma_8e87c202f6")
+me = MessageJSON.new("ChiSigma_8e87c202f6", "raj")
 me.import
 me.my_sent
 me.character_count
