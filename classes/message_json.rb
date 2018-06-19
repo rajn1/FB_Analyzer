@@ -29,15 +29,36 @@ class MessageJSON
       hash["sender_name"] =~ /raj/i
     end
 
-    @percentMe = result.length.to_f / @count.to_f * 100.0
-
     return result
   end
 
   def character_count
-    my_messages = my_sent
+    messages = @data['messages']
+
+    my_char = 0
+    other_char = 0
+    messages.each do |m|
+      begin
+        if m["sender_name"] =~ /raj/i
+          my_char = my_char + m["content"].size
+        else
+          other_char = other_char + m["content"].size
+        end
+
+      rescue
+        next
+      end
+
+    end
+    @percentMe = my_char.to_f / other_char.to_f * 100.0
   end
 
 end
 
 
+
+me = MessageJSON.new("ChiSigma_8e87c202f6")
+me.import
+me.my_sent
+me.character_count
+puts me.instance_variable_get(:@percentMe)
