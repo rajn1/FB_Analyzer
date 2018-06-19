@@ -51,7 +51,7 @@ class MessageJSON
       end
 
     end
-    @percentMe = my_char.to_f / other_char.to_f * 100.0
+    @percentMe = my_char.to_f / (other_char.to_f + my_char) * 100.0
   end
 
 end
