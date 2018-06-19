@@ -72,14 +72,20 @@ class MessageJSON
     return time
   end
 
+  def calc_all
+    import
+    my_sent
+    character_count
+    total_call_time
+  end
+
+
 end
 
 
 
 me = MessageJSON.new("xyz", "raj")
-me.import
-me.my_sent
-me.character_count
+me.calc_all
 puts me.total_call_time
 
 #TODO
