@@ -65,20 +65,26 @@ class TextXML
     output = []
 
     char_me = 0
+    msg_me = 0
     char_them = 0
+    msg_them = 0
 
     messageData.each do |name, messages|
 
       messages.each do |message|
         if message[2].to_i == 2
           char_me = char_me + message[1].size
+          msg_me = msg_me + 1
         else
           char_them = char_them + message[1].size
+          msg_them = msg_them + 1
         end
       end
-      output << [name, char_me, char_them]
+      output << [name, char_me, msg_me, char_them, msg_them]
       char_me = 0
       char_them = 0
+      msg_me = 0
+      msg_them = 0
     end
     return output
 
@@ -110,4 +116,4 @@ end
 
 a = TextXML.new()
 a.import
-puts a.total_char_split_sum
+puts a.total_char_split
