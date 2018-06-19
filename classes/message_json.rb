@@ -81,3 +81,11 @@ me.import
 me.my_sent
 me.character_count
 puts me.total_call_time
+
+#TODO
+# Write Function to put all vars into Excel
+# Write loop to go through all files
+# Do more advanced analysis on conversation timeline
+# Import SMS/Call Data (?)
+#
+
