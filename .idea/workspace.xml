@@ -13,7 +13,7 @@
     <SUITE FILE_PATH="coverage/FB_Analyzer@message_json_script.rcov" NAME="message_json_script Coverage Results" MODIFIED="1529379486455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
     <SUITE FILE_PATH="coverage/FB_Analyzer@main.rcov" NAME="main Coverage Results" MODIFIED="1528413107292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FB_Analyzer" />
     <SUITE FILE_PATH="coverage/FB_Analyzer@IRB_console__FB_Analyzer.rcov" NAME="IRB console: FB_Analyzer Coverage Results" MODIFIED="1529377268386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FB_Analyzer" />
-    <SUITE FILE_PATH="coverage/FB_Analyzer@message_json.rcov" NAME="message_json Coverage Results" MODIFIED="1529412581792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
+    <SUITE FILE_PATH="coverage/FB_Analyzer@message_json.rcov" NAME="message_json Coverage Results" MODIFIED="1529415423500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -29,8 +29,8 @@
       <file leaf-file-name="message_json.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/message_json.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="81" column="6" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
+            <state relative-caret-position="336">
+              <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -205,12 +205,12 @@
       <workItem from="1528406321090" duration="2856000" />
       <workItem from="1528414662781" duration="2649000" />
       <workItem from="1528916741109" duration="620000" />
-      <workItem from="1529098997280" duration="20914000" />
+      <workItem from="1529098997280" duration="24063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27039000" />
+    <option name="totallyTimeSpent" value="30188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -279,8 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/message_json.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="81" column="6" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
+        <state relative-caret-position="336">
+          <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
         </state>
       </provider>
     </entry>
