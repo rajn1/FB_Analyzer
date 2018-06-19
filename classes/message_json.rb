@@ -81,30 +81,10 @@ class MessageJSON
     total_call_time
   end
 
-  def calc_all_files
-
-    output = []
-
-    Dir.foreach('C:/Users/RajNa/Documents/Facebook_JSON/messages') do |item|
-      begin
-        next if item == '.' or item == '..'
-          msg = MessageJSON.new(item.to_s, "raj")
-          msg.calc_all_individual
-          output << [msg.title, msg.count, msg.percentMe, msg.callTime]
-      rescue
-        next
-      end
-    end
-    return output
-  end
-
 end
 
 
-
-me = MessageJSON.new("5d3d312959", "raj")
-# me.calc_all_individual
-# puts me.total_call_time
+# run through all files
 output = []
 Dir.foreach('C:/Users/RajNa/Documents/Facebook_JSON/messages') do |item|
   begin
