@@ -54,12 +54,30 @@ class MessageJSON
     @percentMe = my_char.to_f / (other_char.to_f + my_char) * 100.0
   end
 
+  # time data in seconds
+  def total_call_time
+    messages = @data['messages']
+    time = 0
+    messages.each do |m|
+      begin
+        if m["type"] == "Call"
+          time = time + m["call_duration"].to_i
+        end
+
+      rescue
+        next
+      end
+
+    end
+    return time
+  end
+
 end
 
 
 
-me = MessageJSON.new("ChiSigma_8e87c202f6", "raj")
+me = MessageJSON.new("xyz", "raj")
 me.import
 me.my_sent
 me.character_count
-puts me.instance_variable_get(:@percentMe)
+puts me.total_call_time
