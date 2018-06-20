@@ -14,8 +14,8 @@
     <SUITE FILE_PATH="coverage/FB_Analyzer@text_xml.rcov" NAME="text_xml Coverage Results" MODIFIED="1529450985155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
     <SUITE FILE_PATH="coverage/FB_Analyzer@main.rcov" NAME="main Coverage Results" MODIFIED="1528413107292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FB_Analyzer" />
     <SUITE FILE_PATH="coverage/FB_Analyzer@IRB_console__FB_Analyzer.rcov" NAME="IRB console: FB_Analyzer Coverage Results" MODIFIED="1529377268386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FB_Analyzer" />
-    <SUITE FILE_PATH="coverage/FB_Analyzer@call_xml.rcov" NAME="call_xml Coverage Results" MODIFIED="1529445091942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
-    <SUITE FILE_PATH="coverage/FB_Analyzer@message_json.rcov" NAME="message_json Coverage Results" MODIFIED="1529443484664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
+    <SUITE FILE_PATH="coverage/FB_Analyzer@call_xml.rcov" NAME="call_xml Coverage Results" MODIFIED="1529460249779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
+    <SUITE FILE_PATH="coverage/FB_Analyzer@message_json.rcov" NAME="message_json Coverage Results" MODIFIED="1529460316259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -28,20 +28,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message_json.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="message_json.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/message_json.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="1632">
+              <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="text_xml.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="text_xml.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/text_xml.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="86" column="18" selection-end-line="119" />
+            <state relative-caret-position="1135">
+              <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/classes/call_xml.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+              <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -84,8 +84,8 @@
         <option value="$PROJECT_DIR$/classes/Message.rb" />
         <option value="$PROJECT_DIR$/classes/message_json_script.rb" />
         <option value="$PROJECT_DIR$/classes/message_json.rb" />
-        <option value="$PROJECT_DIR$/classes/call_xml.rb" />
         <option value="$PROJECT_DIR$/classes/text_xml.rb" />
+        <option value="$PROJECT_DIR$/classes/call_xml.rb" />
       </list>
     </option>
   </component>
@@ -144,7 +144,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.text_xml">
+  <component name="RunManager" selected="Ruby.message_json">
     <configuration name="IRB console: FB_Analyzer" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="FB_Analyzer" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -220,9 +220,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Ruby.text_xml" />
-        <item itemvalue="Ruby.call_xml" />
         <item itemvalue="Ruby.message_json" />
+        <item itemvalue="Ruby.call_xml" />
+        <item itemvalue="Ruby.text_xml" />
         <item itemvalue="Ruby.message_json_script" />
         <item itemvalue="IRB console.IRB console: FB_Analyzer" />
       </list>
@@ -242,12 +242,12 @@
       <workItem from="1528406321090" duration="2856000" />
       <workItem from="1528414662781" duration="2649000" />
       <workItem from="1528916741109" duration="620000" />
-      <workItem from="1529098997280" duration="33872000" />
+      <workItem from="1529098997280" duration="36122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39997000" />
+    <option name="totallyTimeSpent" value="42247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -317,21 +317,21 @@
     <entry file="file://$PROJECT_DIR$/classes/call_xml.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/message_json.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/text_xml.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="86" column="18" selection-end-line="119" />
+        <state relative-caret-position="1135">
+          <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/message_json.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
         </state>
       </provider>
     </entry>

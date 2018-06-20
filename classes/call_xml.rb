@@ -8,6 +8,7 @@ class CallXML
 
   def initialize
     @data = nil
+    @total = 0
   end
 
   # type 1 = Recieved, 2 = sent
@@ -20,8 +21,33 @@ class CallXML
     return data
   end
 
+  # Calculate call time by person
+  def call_time
+
+    info = Hash.new(0)
+
+    @data.each do |call|
+      @total = @total + call["duration"].to_i
+      info[call["contact_name"]] = info[call["contact_name"]] + call["duration"].to_i
+    end
+
+    return info
+  end
+
+  # Organize data by person
+  def call_time_array
+
+    info = Hash.new([])
+
+    @data.each do |call|
+      info[call["contact_name"]] << [call["date"], call["duration"].to_i]
+    end
+
+    return info
+  end
+
 end
 
 a = CallXML.new()
 a.import
-puts a.instance_variable_get(:@data)
+puts a.call_time
