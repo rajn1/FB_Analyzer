@@ -10,7 +10,10 @@ class MessageJSON
     @count = 0
     @percentMe = 0
     @callTime = 0
+    @charMe = 0
+    @charOther = 0
     @data = nil
+
   end
 
   def import
@@ -53,6 +56,8 @@ class MessageJSON
 
     end
     @percentMe = my_char.to_f / (other_char.to_f + my_char) * 100.0
+    @charMe = my_char
+    @charOther = other_char
   end
 
   # time data in seconds
@@ -97,29 +102,51 @@ class MessageJSON
     return @callTime
   end
 
+  def charMe
+    return @charMe
+  end
+
+  def charOther
+    return @charOther
+  end
+
 end
 
 
 # run through all files
-output = []
+overall = [["Title", "Count", "Char - Me", "Char - Other", "% Me", "Call Time"]]
 Dir.foreach('C:/Users/RajNa/Documents/Facebook_JSON/messages') do |item|
   begin
     next if item == '.' or item == '..'
     msg = MessageJSON.new(item.to_s, "raj")
     msg.calc_all_individual
-    output << [msg.title, msg.count, msg.percentMe, msg.callTime]
+    overall << [msg.title, msg.count, msg.charMe, msg.charOther, msg.percentMe, msg.callTime]
   rescue
     next
   end
 end
 
-puts output
+puts overall
 
+overall.delete(0)
+
+total_messages = 0
+total_char_me = 0
+total_char_other = 0
+
+overall.each do |msg|
+  total_messages = total_messages + msg[1]
+  total_char_me = total_char_me + msg[2]
+  total_char_other = total_char_other + msg[3]
+end
+
+puts "Messages: #{total_messages}"
+puts "Char Me: #{total_char_me}"
+puts "Char Other: #{total_char_other}"
 
 
 #TODO
 # Write Function to put all vars into Excel
-# Write loop to go through all files
 # Do more advanced analysis on conversation timeline
 # Import SMS/Call Data (?)
 #
