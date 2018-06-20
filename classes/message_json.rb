@@ -79,6 +79,26 @@ class MessageJSON
     return time
   end
 
+  # Create hash of word count for each word
+  def common_words
+    words = Hash.new(0)
+    messages = @data["messages"]
+
+    messages.each do |msg|
+      begin
+        content = msg["content"].split
+
+        content.each do |word|
+          words[word] = words[word] + 1
+        end
+      rescue
+        next
+      end
+    end
+
+    return words.sort_by { |word, count| count }
+  end
+
   def calc_all_individual
     import
     my_sent
@@ -112,11 +132,10 @@ class MessageJSON
 
 end
 
-
-
 #TODO
 # Write Function to put all vars into Excel
 # Do more advanced analysis on conversation timeline
 # Import SMS/Call Data (?)
+#
 #
 
