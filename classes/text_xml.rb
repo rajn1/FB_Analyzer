@@ -111,6 +111,25 @@ class TextXML
 
   end
 
+  # Create hash of word count for each word across single Conversation
+  def common_words(name)
+    words = Hash.new(0)
+    messages = @data[name]
+
+    messages.each do |msg|
+      begin
+        content = msg[1].split
+
+        content.each do |word|
+          words[word] = words[word] + 1
+        end
+      rescue
+        next
+      end
+    end
+
+    return words.sort_by { |word, count| count }
+  end
+
 
 end
-
