@@ -15,7 +15,7 @@
     <SUITE FILE_PATH="coverage/FB_Analyzer@main.rcov" NAME="main Coverage Results" MODIFIED="1528413107292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FB_Analyzer" />
     <SUITE FILE_PATH="coverage/FB_Analyzer@IRB_console__FB_Analyzer.rcov" NAME="IRB console: FB_Analyzer Coverage Results" MODIFIED="1529377268386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FB_Analyzer" />
     <SUITE FILE_PATH="coverage/FB_Analyzer@call_xml.rcov" NAME="call_xml Coverage Results" MODIFIED="1529460249779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
-    <SUITE FILE_PATH="coverage/FB_Analyzer@message_json.rcov" NAME="message_json Coverage Results" MODIFIED="1529460316259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
+    <SUITE FILE_PATH="coverage/FB_Analyzer@message_json.rcov" NAME="message_json Coverage Results" MODIFIED="1529460654973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -31,8 +31,8 @@
       <file leaf-file-name="message_json.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/message_json.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+            <state relative-caret-position="965">
+              <caret line="109" column="64" lean-forward="true" selection-start-line="109" selection-start-column="64" selection-end-line="109" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -83,9 +83,9 @@
         <option value="$PROJECT_DIR$/classes/importData.rb" />
         <option value="$PROJECT_DIR$/classes/Message.rb" />
         <option value="$PROJECT_DIR$/classes/message_json_script.rb" />
-        <option value="$PROJECT_DIR$/classes/message_json.rb" />
         <option value="$PROJECT_DIR$/classes/text_xml.rb" />
         <option value="$PROJECT_DIR$/classes/call_xml.rb" />
+        <option value="$PROJECT_DIR$/classes/message_json.rb" />
       </list>
     </option>
   </component>
@@ -242,12 +242,12 @@
       <workItem from="1528406321090" duration="2856000" />
       <workItem from="1528414662781" duration="2649000" />
       <workItem from="1528916741109" duration="620000" />
-      <workItem from="1529098997280" duration="36122000" />
+      <workItem from="1529098997280" duration="36377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42247000" />
+    <option name="totallyTimeSpent" value="42502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -330,8 +330,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/message_json.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+        <state relative-caret-position="965">
+          <caret line="109" column="64" lean-forward="true" selection-start-line="109" selection-start-column="64" selection-end-line="109" selection-end-column="64" />
         </state>
       </provider>
     </entry>

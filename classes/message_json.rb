@@ -81,6 +81,22 @@ class MessageJSON
     total_call_time
   end
 
+  def title
+    return @title
+  end
+
+  def count
+    return @count
+  end
+
+  def percentMe
+    return @percentMe
+  end
+
+  def callTime
+    return @callTime
+  end
+
 end
 
 
@@ -91,7 +107,7 @@ Dir.foreach('C:/Users/RajNa/Documents/Facebook_JSON/messages') do |item|
     next if item == '.' or item == '..'
     msg = MessageJSON.new(item.to_s, "raj")
     msg.calc_all_individual
-    output << [msg.instance_variable_get(:@title), msg.instance_variable_get(:@count), msg.instance_variable_get(:@percentMe)]
+    output << [msg.title, msg.count, msg.percentMe, msg.callTime]
   rescue
     next
   end
