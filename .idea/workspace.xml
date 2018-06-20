@@ -12,9 +12,9 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/FB_Analyzer@message_json_script.rcov" NAME="message_json_script Coverage Results" MODIFIED="1529379486455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
     <SUITE FILE_PATH="coverage/FB_Analyzer@text_xml.rcov" NAME="text_xml Coverage Results" MODIFIED="1529450985155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
-    <SUITE FILE_PATH="coverage/FB_Analyzer@main.rcov" NAME="main Coverage Results" MODIFIED="1528413107292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FB_Analyzer" />
     <SUITE FILE_PATH="coverage/FB_Analyzer@IRB_console__FB_Analyzer.rcov" NAME="IRB console: FB_Analyzer Coverage Results" MODIFIED="1529377268386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FB_Analyzer" />
     <SUITE FILE_PATH="coverage/FB_Analyzer@call_xml.rcov" NAME="call_xml Coverage Results" MODIFIED="1529460249779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
+    <SUITE FILE_PATH="coverage/FB_Analyzer@main.rcov" NAME="main Coverage Results" MODIFIED="1529462872771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
     <SUITE FILE_PATH="coverage/FB_Analyzer@message_json.rcov" NAME="message_json Coverage Results" MODIFIED="1529461729791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" MODULE_NAME="FB_Analyzer" />
   </component>
   <component name="FileEditorManager">
@@ -28,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message_json.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="message_json.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/message_json.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="128" column="12" lean-forward="true" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+            <state relative-caret-position="506">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
@@ -40,8 +40,8 @@
       <file leaf-file-name="text_xml.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/text_xml.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1135">
-              <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+            <state relative-caret-position="319">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
         </entry>
@@ -50,7 +50,16 @@
         <entry file="file://$PROJECT_DIR$/classes/call_xml.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classes/main.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="51" column="5" lean-forward="true" selection-end-line="58" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -83,9 +92,10 @@
         <option value="$PROJECT_DIR$/classes/importData.rb" />
         <option value="$PROJECT_DIR$/classes/Message.rb" />
         <option value="$PROJECT_DIR$/classes/message_json_script.rb" />
+        <option value="$PROJECT_DIR$/classes/main.rb" />
+        <option value="$PROJECT_DIR$/classes/message_json.rb" />
         <option value="$PROJECT_DIR$/classes/text_xml.rb" />
         <option value="$PROJECT_DIR$/classes/call_xml.rb" />
-        <option value="$PROJECT_DIR$/classes/message_json.rb" />
       </list>
     </option>
   </component>
@@ -144,21 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.message_json">
-    <configuration name="IRB console: FB_Analyzer" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
-      <module name="FB_Analyzer" />
-      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$APPLICATION_HOME_DIR$/rb/testing/runner/irb.rb" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--prompt simple" />
-      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
-    </configuration>
+  <component name="RunManager" selected="Ruby.main">
     <configuration name="call_xml" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="FB_Analyzer" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -170,6 +166,19 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/classes/call_xml.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+    </configuration>
+    <configuration name="main" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="FB_Analyzer" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/classes" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/classes/main.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
     </configuration>
     <configuration name="message_json" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
@@ -212,19 +221,19 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
     </configuration>
     <list>
-      <item itemvalue="IRB console.IRB console: FB_Analyzer" />
       <item itemvalue="Ruby.message_json_script" />
       <item itemvalue="Ruby.message_json" />
       <item itemvalue="Ruby.text_xml" />
       <item itemvalue="Ruby.call_xml" />
+      <item itemvalue="Ruby.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.main" />
         <item itemvalue="Ruby.message_json" />
         <item itemvalue="Ruby.call_xml" />
         <item itemvalue="Ruby.text_xml" />
         <item itemvalue="Ruby.message_json_script" />
-        <item itemvalue="IRB console.IRB console: FB_Analyzer" />
       </list>
     </recent_temporary>
   </component>
@@ -242,12 +251,12 @@
       <workItem from="1528406321090" duration="2856000" />
       <workItem from="1528414662781" duration="2649000" />
       <workItem from="1528916741109" duration="620000" />
-      <workItem from="1529098997280" duration="37471000" />
+      <workItem from="1529098997280" duration="38587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43596000" />
+    <option name="totallyTimeSpent" value="44712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -262,6 +271,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22526042" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32965517" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -314,24 +324,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/call_xml.rb">
+    <entry file="file://$PROJECT_DIR$/classes/message_json.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        <state relative-caret-position="506">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/text_xml.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1135">
-          <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        <state relative-caret-position="319">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/message_json.rb">
+    <entry file="file://$PROJECT_DIR$/classes/call_xml.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="128" column="12" lean-forward="true" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+        <state relative-caret-position="336">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/main.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="51" column="5" lean-forward="true" selection-end-line="58" selection-end-column="23" />
         </state>
       </provider>
     </entry>

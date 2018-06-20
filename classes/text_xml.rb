@@ -114,6 +114,3 @@ class TextXML
 
 end
 
-a = TextXML.new()
-a.import
-puts a.total_char_split

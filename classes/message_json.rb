@@ -113,38 +113,6 @@ class MessageJSON
 end
 
 
-# run through all files
-overall = [["Title", "Count", "Char - Me", "Char - Other", "% Me", "Call Time"]]
-Dir.foreach('C:/Users/RajNa/Documents/Facebook_JSON/messages') do |item|
-  begin
-    next if item == '.' or item == '..'
-    msg = MessageJSON.new(item.to_s, "raj")
-    msg.calc_all_individual
-    overall << [msg.title, msg.count, msg.charMe, msg.charOther, msg.percentMe, msg.callTime]
-  rescue
-    next
-  end
-end
-
-puts overall
-
-overall.delete(0)
-
-total_messages = 0
-total_char_me = 0
-total_char_other = 0
-
-overall.each do |msg|
-  total_messages = total_messages + msg[1]
-  total_char_me = total_char_me + msg[2]
-  total_char_other = total_char_other + msg[3]
-end
-
-puts "Messages: #{total_messages}"
-puts "Char Me: #{total_char_me}"
-puts "Char Other: #{total_char_other}"
-
-
 #TODO
 # Write Function to put all vars into Excel
 # Do more advanced analysis on conversation timeline

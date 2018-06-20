@@ -47,7 +47,3 @@ class CallXML
   end
 
 end
-
-a = CallXML.new()
-a.import
-puts a.call_time
