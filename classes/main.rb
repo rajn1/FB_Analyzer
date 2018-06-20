@@ -3,11 +3,10 @@ class Main
   require './message_json.rb'
   require './text_xml'
   require './call_xml'
+  require 'csv'
 
-  # Run through all FB Messages to synopsize by sender
+  # Run through all FB Messages to synopsis by sender
   def JSON_FB_Analyser
-
-
 
     #overall = [["Title", "Count", "Char - Me", "Char - Other", "% Me", "Call Time"]]
     overall = []
@@ -25,7 +24,7 @@ class Main
       end
     end
 
-    puts overall
+    return overall
 
   end
 
@@ -51,9 +50,20 @@ class Main
 
   end
 
+  def write_to_csv(data)
+
+    CSV.open("C:/Users/RajNa/RubymineProjects/FB_Analyzer/FBdata.csv", "w") do |csv|
+
+      data.each do |x|
+        csv << x
+      end
+
+    end
+  end
+
 
 end
 
 a = Main.new
 
-puts a.JSON_FB_Analyser
+puts a.write_to_csv(a.JSON_FB_Analyser)
